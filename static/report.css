@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Wallpapers.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.container{
+
+    width:700px;
+
+    padding:45px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    animation:fadeUp 1.2s;
+
+}
+
+h1{
+
+    color:white;
+
+    font-size:45px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+    text-shadow:3px 3px 12px rgba(0,0,0,.5);
+
+}
+
+.city{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+}
+
+.weather-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+    background:rgba(255,255,255,.2);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.3);
+
+}
+
+.card h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 30px;
+
+    background:white;
+
+    color:#1565c0;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#1565c0;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+width:90%;
+
+padding:30px;
+
+}
+
+.weather-box{
+
+grid-template-columns:1fr;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+.city{
+
+font-size:24px;
+
+}
+
+.card p{
+
+font-size:22px;
+
+}
+
+.back-btn{
+
+width:100%;
+
+}
+
+}

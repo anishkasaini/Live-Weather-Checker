@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Report</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='report.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌦 Weather Report</h1>
+
+        <h2>{{ city }}</h2>
+
+        <div class="card">
+
+            <h3>🌡 Temperature</h3>
+
+            <p>{{ temperature }} °C</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💧 Humidity</h3>
+
+            <p>{{ humidity }} %</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌬 Wind Speed</h3>
+
+            <p>{{ wind }} km/h</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>☁ Weather</h3>
+
+            <p>{{ description }}</p>
+
+        </div>
+
+        <br>
+
+        <a href="/">
+            ⬅ Search Another City
+        </a>
+
+    </div>
+
+</body>
+
+</html>

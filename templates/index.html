@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Analysis Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌦 Weather Analysis Dashboard</h1>
+
+        <p class="subtitle">
+            Get real-time weather information for any city around the world.
+        </p>
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="city"
+                placeholder="Search any city..."
+                required>
+
+            <button type="submit">
+                Analyze Weather →
+            </button>
+
+        </form>
+
+        <p id="para">
+            Planning a trip or just curious about today's weather? Search any city to instantly access live temperature, humidity, wind speed, atmospheric pressure, visibility and many more weather insights through a beautiful dashboard.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

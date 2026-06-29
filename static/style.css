@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Desktop-Wallpapers.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.container{
+
+    width:700px;
+
+    padding:45px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    animation:fadeUp 1.2s;
+
+}
+
+h1{
+
+    color:white;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    text-shadow:3px 3px 12px rgba(0,0,0,.5);
+
+}
+
+.subtitle{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+input{
+
+    width:380px;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:40px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+input:focus{
+
+    transform:scale(1.03);
+
+    box-shadow:0 0 20px rgba(255,255,255,.4);
+
+}
+
+button{
+
+    padding:16px 28px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+button:hover{
+
+    background:#1565c0;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+#para{
+
+    margin-top:35px;
+
+    color:white;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    width:0;
+
+    border-right:3px solid white;
+
+    animation:typing 8s steps(90) infinite,
+              blink .8s infinite;
+
+}
+
+@keyframes typing{
+
+    0%{
+        width:0;
+    }
+
+    40%{
+        width:100%;
+    }
+
+    70%{
+        width:100%;
+    }
+
+    100%{
+        width:0;
+    }
+
+}
+
+@keyframes blink{
+
+    50%{
+        border-color:transparent;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+width:90%;
+
+padding:30px;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+.subtitle{
+
+font-size:16px;
+
+}
+
+input{
+
+width:100%;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+#para{
+
+white-space:normal;
+
+width:100%;
+
+border:none;
+
+animation:none;
+
+}
+
+}
