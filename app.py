@@ -24,7 +24,7 @@ def home():
 
         data = response.json()
 
-        # Check if city is valid
+       
         if response.status_code == 200:
 
             city_name = data["name"]
